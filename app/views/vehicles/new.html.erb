@@ -1,0 +1,15 @@
+<div class="container">
+<div class="row">
+<div class="col"><br><br><br><br><br><br></div></div>
+</div>
+<div class="container">
+  <h1>Add a new vehicle</h1>
+  <%= simple_form_for(@vehicle) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :category, collection: ["Auto", "Bicicleta", "Scooter"] %>
+    <%= f.input :precio %>
+    <%= f.input :description %>
+    <%= f.submit "Guardar", class: "btn btn-success" %>
+  <% end %>
+</div>
+<a href="/vehicles/index">Back to list</a>

@@ -1,0 +1,18 @@
+<%= simple_form_for [ @vehicle, @booking ] do |f| %>
+  <%= f.input :ciudad %>
+  <%= f.input :date_start %>
+  <%= f.input :date_finish %>
+  <%= f.submit "Save ", class: "btn btn-primary" %>
+<% end %>
+<a href="/vehicles">Home</a>
+<div class="container pt-5">
+  <h1>Reserve</h1>
+  <%= simple_form_for(@vehicle) do |f| %>
+    <%= f.input :location, collection: ["Lima", "La Libertad", "Ica", "Cusco"] %>
+    <%= f.input :date_start %>
+    <%= f.input :date_finish %>
+    <%= f.input :description %>
+    <%= f.submit "Guardar", class: "btn btn-primary" %>
+  <% end %>
+</div>
+<a href="/vehicles/index">Back to list</a>
