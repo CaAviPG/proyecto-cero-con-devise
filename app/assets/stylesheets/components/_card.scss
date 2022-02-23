@@ -105,8 +105,10 @@
   margin-right: 5px;
 }
 
-// .card {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-gap:16px;
-//   }
+.container-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:16px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
